@@ -1,0 +1,340 @@
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url(sozai/kumo3.png),url(sozai/kumo4.png);
+  background-repeat: repeat-y;
+  background-position: right,left;
+  background-size: 30%;
+}
+
+@media (max-width:760px) {
+  body{
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+
+}
+
+header h1 {
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+
+h2 {
+  color: #87796d;
+  margin: 15px;
+  font-size: 2.3rem;
+  background-color: #FCE4D6;
+  border-right: 10px solid #cebaafb0;
+  border-bottom: 8px solid #cebaafb0;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 20px;
+  display: inline-block;
+  
+}
+h3 {
+  color: #87796d;
+  margin: 15px;
+  font-size: 2.3rem;
+  padding: 10px;
+  margin-top: 150px;
+}
+.headertext {
+  color: #87796d;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+p {
+  color: #87796d;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  background-color: #fce4d680;
+  border-right: 10px solid #cebaaf73;
+  border-bottom: 8px solid #cebaaf73;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.title {
+  margin-right: auto;
+	color: #87796d;
+}
+
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 15px;
+  color: #87796d;
+}
+
+.pcnav ul li a {
+  text-decoration: none;
+  color: #87796d;
+}
+
+.pcnav :hover {
+  color: #c9521b;
+}
+
+/*タブレット、pc*/
+@media (min-width: 761px) {
+
+  #g-nav {
+    display: none;
+  }
+
+}
+
+/*スマホ*/
+@media (max-width:760px) {
+
+
+  .pcnav {
+    display: none;
+  }
+  #g-nav {
+    position: fixed;
+    text-align: center;
+    line-height: 40px;
+    z-index: 999;
+    top: 10px;
+    right: -120%;
+    width: 200px;
+    height: 400px;
+
+    background: #87796d;
+    transition: all 0.6s;
+    border-radius: 50px;
+  }
+
+  #g-nav.panelactive {
+    right: 0;
+  }
+
+  #g-nav a:hover {
+    color: #FCE4D6;
+  }
+
+
+  #g-nav ul {
+    position: relative;
+    top: 210px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+  }
+
+  #g-nav li {
+    list-style: none;
+    text-align: center;
+  }
+
+  #g-nav li a {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .openbtn {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 1px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+
+  }
+
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 20px;
+    height: 5px;
+    background-color: #b8b8b8;
+    width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 20px;
+    border-radius: 50px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 35px;
+    border-radius: 50px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 50px;
+    border-radius: 50px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 28px;
+    left: 30px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+    border-radius: 50px;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+    border-radius: 50px;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 40px;
+    left: 30px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+    border-radius: 50px;
+  }
+
+
+}
+
+
+/*==============================ここまでヘッダー==============================*/
+
+
+
+
+
+.main {
+  background-image: url(sozai/asiato.png);
+	background-position:right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+
+}
+
+
+
+.tyousei {
+  
+}
+
+#sec3 {
+  display: flex;
+	margin-bottom: 100px;
+}
+
+p {
+  margin-right: 50px;
+  line-height: 4vw;
+}
+
+#sec3 img {
+  position: relative;
+  width: 20rem;
+}
+
+#sec4 {
+  display: flex;
+}
+
+#sec4 img {
+  position: relative;
+  width: 20rem;
+}
+
+
+/*フッター*/
+.footer02 {
+ color: #87796d;
+ background: #FCE4D6;
+ text-align: center;
+ padding: 30px;
+ margin-top:50px;
+ border-radius: 50px;
+}
+.footer02 a {
+ color: #87796d;
+ text-decoration: none;
+}
+.footer02 a:hover {
+ text-decoration: underline;
+}
+.footer02 .menu {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.footer02 .menu li {
+ margin: 0;
+ padding: 0 20px;
+}
+.footer02 .copyright {
+ margin: 0;
+ padding: 20px 0 0 0;
+}
+
+
+
+
+
+
+/*＝＝スマホ用＝＝*/
+@media (max-width:760px) {
+	.main{
+    background-image: none;
+  }
+	.headertext{
+		font-size: 1rem;
+	}
+	
+	#sec3 {
+  display: flex;
+	margin-bottom: 60px;
+}
+
+#sec3 p {
+  margin-right: 50px;
+	font-size: 1rem;
+}
+
+#sec3 img {
+  position: relative;
+  margin-top: 20px;
+  width: 10rem;
+}
+	
+		#sec4 {
+  display: flex;
+	margin-bottom: 100px;
+}
+
+#sec4 p {
+  margin-right: 50px;
+	font-size: 1rem;
+}
+
+#sec4 img {
+  position: relative;
+	margin-top: 20px;
+  width: 10rem;
+}
+	
+}
